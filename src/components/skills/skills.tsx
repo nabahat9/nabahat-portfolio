@@ -15,7 +15,7 @@ import {
   SiFlutter,
   SiDocker,
   SiVercel,
-  SiRender, // assuming you install react-icons/si
+  SiRender, 
 } from "react-icons/si";
 import "./skills.css";
 
