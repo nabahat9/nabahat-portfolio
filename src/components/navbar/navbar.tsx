@@ -12,6 +12,7 @@ function Navbar() {
           <li>
             <a href="#services">Services</a>
           </li>
+          
           <li>
             <a href="#skills">Skills</a>
           </li>
