@@ -1,0 +1,80 @@
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.projects-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+/* Carousel */
+.carousel {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.projects-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow-x: auto;
+  position: relative;
+  height: 420px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE & Edge */
+}
+
+.carousel-project {
+  position: absolute;
+  width: 260px;
+  transition:
+    transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.5s ease;
+  transform-origin: center center;
+}
+
+/* Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(45deg, #00bcd4, #8e2de2);
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 20;
+  transition: all 0.3s ease;
+  padding: 0; /* remove default padding */
+}
+
+.carousel-btn:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.carousel-btn.left {
+  left: -30px;
+}
+
+.carousel-btn.right {
+  right: -30px;
+}
+
+.carousel-btn svg {
+  display: block;
+  stroke: white;
+  width: 20px;
+  height: 20px;
+}

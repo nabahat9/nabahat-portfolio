@@ -1,0 +1,54 @@
+/* Navbar */
+.navbar {
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+  padding: 20px 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+/* Normal links */
+.nav-links li a:not(.contact-btn) {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  transition: 0.3s;
+}
+
+.nav-links li a:not(.contact-btn):hover {
+  color: #00bcd4;
+}
+
+/* Contact Button */
+.nav-links li a.contact-btn {
+  padding: 10px 22px;
+  font-size: 25px;
+  border-radius: 15px;
+  background: linear-gradient(45deg, #00bcd4, #8e2de2);
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links li a.contact-btn:hover {
+  background-color: #00bcd4;
+  color: black;
+}

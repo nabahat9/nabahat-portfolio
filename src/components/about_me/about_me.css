@@ -1,0 +1,128 @@
+/* Container */
+.about {
+  width: 100%;
+  min-height: 100vh; /* Full screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212; /* light background */
+  font-family: "Arial", sans-serif;
+  padding: 50px 50px;
+}
+
+.about-container {
+  padding: 40px;
+  display: flex;
+  gap: 50px; /* Space between left and right */
+  width: 100%;
+  flex-wrap: wrap; /* Stack on small screens */
+}
+
+/* Left Side */
+.left-side {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.big-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-me-btn {
+  padding: 10px 22px;
+  font-size: 25px;
+  border-radius: 15px;
+  background: linear-gradient(45deg, #00bcd4, #8e2de2);
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-me-btn:hover {
+  background-color: #0056b3;
+}
+
+.link-in-btn {
+  border: 0.5px solid #515151;
+  color: #e0e0e0;
+  border-radius: 15px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  /* The blur effect on the content BEHIND the card */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+}
+
+.link-in-btn:hover {
+}
+
+.github-btn {
+  border: 0.5px solid #515151;
+  color: #e0e0e0;
+  border-radius: 15px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  /* The blur effect on the content BEHIND the card */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+}
+
+.github-btn:hover {
+}
+
+/* Right Side */
+.right.side {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right.side::before {
+  content: "";
+  width: 250px;
+  height: 250px;
+  background-color: #ddd; /* placeholder for image or illustration */
+  border-radius: 50%;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+}

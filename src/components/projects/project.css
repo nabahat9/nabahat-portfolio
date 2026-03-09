@@ -1,0 +1,75 @@
+/* Main card */
+.project-card {
+  display: flex;
+  flex-direction: column; /* stack image + description */
+  background: rgba(255, 255, 255, 0.05); /* frosted glass look */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  width: 300px;
+  height: 380px; /* fixed height for uniformity */
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Image / picture section */
+.card-picture {
+  width: 100%;
+  height: 180px; /* fixed height for all images */
+  background-color: #333; /* placeholder if image missing */
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+/* Description container */
+.card-description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  flex: 1; /* fill remaining height */
+}
+
+/* Project title */
+.card-big-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Project description text */
+.card-description-text {
+  font-size: 1rem;
+  color: #b0b0b0;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* limit description to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Hashtags */
+.card-hashtags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto; /* pushes hashtags to the bottom */
+}
+
+.card-hashtags span {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #e0e0e0;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
