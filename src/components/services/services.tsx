@@ -1,4 +1,3 @@
-import React from "react";
 import ServiceCard from "./service-card";
 import "./services.css";
 import { SiReact, SiNodedotjs, SiOpenai, SiFlutter, SiHeroku, SiPython } from "react-icons/si";

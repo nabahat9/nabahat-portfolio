@@ -1,4 +1,3 @@
-import React from "react";
 import "./project.css";
 
 // Define the type for props

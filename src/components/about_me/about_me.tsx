@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./about_me.css";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
